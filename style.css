@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightsteelblue;
+  padding: 1rem auto;
+}
+
+.container {
+  background-color: white;
+  padding: 0;
+}
+
+button.title,
+.text {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+button.title {
+  width: 100%;
+  margin: 0 auto;
+  border: none;
+  text-align: left;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.text {
+  font-size: 1rem;
+}
+
+.text-shown {
+  display: none;
+  text-align: end;
+  padding: 1rem auto;
+}
