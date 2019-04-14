@@ -14,7 +14,6 @@ body {
 
 button.title,
 .text {
-  padding: 0.5rem;
   border-radius: 0.25rem;
 }
 
@@ -29,6 +28,8 @@ button.title {
 
 .text {
   font-size: 1rem;
+  overflow: hidden;
+  max-height: 0;
 }
 
 .text-shown {
