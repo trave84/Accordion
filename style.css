@@ -8,8 +8,9 @@ body {
 }
 
 .container {
-  background-color: white;
+  margin: 0.5rem auto;
   padding: 0;
+  background-color: lightsteelblue;
 }
 
 button.title,
@@ -20,20 +21,62 @@ button.title,
 button.title {
   width: 100%;
   margin: 0 auto;
+  padding: 0.5rem;
   border: none;
   text-align: left;
   font-size: 1.2rem;
   cursor: pointer;
 }
 
-.text {
-  font-size: 1rem;
-  overflow: hidden;
-  max-height: 0;
+button.title::after {
+  content: "\f358";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  float: right;
+  /* -webkit-animation-name: example; Safari 4.0 - 8.0 */
+  /* -webkit-animation-duration: 4s; Safari 4.0 - 8.0 */
+  /* animation-name: example; */
+  /* animation-duration: 4s; */
 }
 
-.text-shown {
+/* Safari 4.0 - 8.0 */
+/* @-webkit-keyframes example {
+  from {
+    content: "\f107";
+  }
+  to {
+    content: "\f106";
+  }
+}
+
+/* Standard syntax */
+/* @keyframes example {
+  from {
+    content: "\f107";
+  }
+  to { 
+    content: "\f106";
+  }
+} */
+
+button.title.text-shown::after {
+  content: "\f35a";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+}
+
+.text {
+  padding: 0 0.5rem;
+  background-color: white;
+  font-size: 1rem;
+  text-align: justify;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s;
+}
+
+/* .text-shown {
   display: none;
   text-align: end;
   padding: 1rem auto;
-}
+} */
